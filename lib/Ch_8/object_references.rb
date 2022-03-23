@@ -3,6 +3,7 @@
 # class CelestialBody
 class CelestialBody
   attr_accessor :name, :type
+  attr_reader :result
 
   bodies = Hash.new do |hash, key|
     body = CelestialBody.new
@@ -15,5 +16,5 @@ class CelestialBody
   bodies['Europa'].type = 'moon'
   bodies['Venus'].name = 'Venus'
 
-  bodies.each { |item| p item }
+  # bodies.each { |item| p item }
 end
