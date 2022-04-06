@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css">
+    <title>Movie <%= @movie.title %></title>
+  </head>
+  <body>
+    <section class="hero is-link">
+      <div class="hero-body">
+        <h1 class="title">Movie <%= @movie.title %></h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="columns">
+        <div class="column is-3">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="https://loremflickr.com/320/240" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            <p>Title: <strong><%= @movie.title %></strong></p>
+            <p>Director: <strong><%= @movie.director %></strong></p>
+            <p>Year: <strong><%= @movie.year %></strong></p>
+            <br>
+            <a href="/movies"><-- Back to index</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+
+  </body>
+</html>
