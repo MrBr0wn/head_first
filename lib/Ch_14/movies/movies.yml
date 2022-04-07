@@ -14,3 +14,8 @@
   director: Brothers Wachowski
   year: '1999'
   id: 3
+4: !ruby/object:Movie
+  title: Test title
+  director: Any director
+  year: '2000'
+  id: 4
